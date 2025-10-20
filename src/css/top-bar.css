@@ -1,0 +1,36 @@
+#nav-bar {
+    height: 32px;
+    top: 0;
+}
+#urlbar-input-container {
+    background-color: var(--theme-glass-color);
+}
+#urlbar-container {
+    width: 20% !important;
+}
+.searchmode-switcher {
+    border-radius: var(--theme-raidious) !important;
+}
+.urlbar-background {
+    border-radius: var(--theme-raidious) !important;
+}
+.urlbar-input {
+    width: 80%;
+}
+.identity-box-button {
+    border-radius: var(--theme-raidious);
+}
+
+#forward-button,#back-button,#reload-button {
+    width: 40px !important;
+    height: 32px !important;
+    border-radius: var(--theme-raidious);
+    margin-left: 8px !important;
+    background-color: var(--theme-glass-color);
+
+}
+#forward-button,#back-button,#reload-button:hover {
+    cursor: pointer;
+    background-color: var(--theme-glass-color);
+    border-radius: var(--theme-raidious);
+}
