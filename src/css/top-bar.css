@@ -2,9 +2,6 @@
     height: 32px;
     top: 0;
 }
-#urlbar-container {
-    width: 20% !important;
-}
 .searchmode-switcher,.identity-box-button {
     border-radius: var(--theme-raidious) !important;
 }
@@ -14,10 +11,6 @@
 .urlbar-input {
     width: 80%;
 }
-.identity-box-button {
-    border-radius: var(--theme-raidious);
-}
-
 #forward-button,#back-button,#reload-button {
     width: 40px !important;
     height: 30px !important;
