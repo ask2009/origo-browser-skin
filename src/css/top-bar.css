@@ -2,13 +2,10 @@
     height: 32px;
     top: 0;
 }
-#urlbar-input-container {
-    background-color: var(--theme-glass-color);
-}
 #urlbar-container {
     width: 20% !important;
 }
-.searchmode-switcher {
+.searchmode-switcher,.identity-box-button {
     border-radius: var(--theme-raidious) !important;
 }
 .urlbar-background {
@@ -23,14 +20,9 @@
 
 #forward-button,#back-button,#reload-button {
     width: 40px !important;
-    height: 32px !important;
+    height: 30px !important;
     border-radius: var(--theme-raidious);
     margin-left: 8px !important;
-    background-color: var(--theme-glass-color);
+    background-color: var(--toolbar-field-background-color);
 
-}
-#forward-button,#back-button,#reload-button:hover {
-    cursor: pointer;
-    background-color: var(--theme-glass-color);
-    border-radius: var(--theme-raidious);
 }
