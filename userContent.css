@@ -1,1 +1,22 @@
-@import "natsumi/natsumi-pages.css";
+
+@-moz-document url("about:newtab"), url("about:home") {
+    :root {
+        --color-accent-primary: var(--lwt-sidebar-highlight-background-color) !important;
+        --color-accent-primary-hover: var(--lwt-sidebar-highlight-background-color) !important;
+    }
+    .top-site-outer:hover .tile {
+        border: 2px solid var(--lwt-sidebar-highlight-background-color);
+        animation: floatUp 0.1s ease-out forwards;
+    }
+    .search-wrapper:focus .search-handoff-button, .search-wrapper input {
+        border: 2px solid var(--lwt-sidebar-highlight-background-color) !important;
+    }
+    @keyframes floatUp {
+        to {
+            transform: translateY(-8px);
+        }
+    }
+
+  
+}
+
