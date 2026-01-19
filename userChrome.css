@@ -1,0 +1,30 @@
+@import url(src/css/top-bar.css);
+@import url(theme-config.css);
+/*<browser xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" contextmenu="contentAreaContextMenu" message="true" messagemanagergroup="browsers" tooltip="aHTMLTooltip" type="content" manualactiveness="true" maychangeremoteness="true" remote="true" autocompletepopup="PopupAutoComplete" nodefaultsrc="true" primary="true" style="border-radius: 80px;border: solid 1px blue;"/>:*/
+browser[contextmenu="contentAreaContextMenu"] {
+    border-radius: var(--theme-raidious) !important;
+    border: 4px solid var(--lwt-accent-color);
+    background-color: white !important;
+    
+}
+/*<stack xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" class="browserStack exclude-letterboxing" style="background-color: #0077de;"><browser contextmenu="contentAreaContextMenu" message="true" messagemanagergroup="browsers" tooltip="aHTMLTooltip" type="content" manualactiveness="true" maychangeremoteness="true" remote="true" autocompletepopup="PopupAutoComplete" nodefaultsrc="true" primary="true"/><hbox id="statuspanel" previoustype="defaultStatus" type="defaultStatus" style="" inactive="true" hidden=""><label id="statuspanel-label" role="status" aria-live="off" flex="1" crop="end" value="developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Working_with_the_Tabs_API"/></hbox></stack>これを指定するには*/
+stack.browserStack {
+    background-color: var(--lwt-accent-color) !important;
+}
+#sidebar-main {
+    border-radius: var(--theme-raidious) !important;
+    padding: 2px;
+}
+#statuspanel-label {
+    border-radius: 4px;
+    background-color: var(--lwt-accent-color) !important;
+    color: var(--lwt-text-color) !important;
+    padding: 4px !important;
+}
+
+body {
+    background-color: var(--lwt-accent-color);
+}
+#tabbrowser-tabbox {
+    outline: none !important;
+}

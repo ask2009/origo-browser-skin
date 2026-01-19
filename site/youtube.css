@@ -1,0 +1,5 @@
+@-moz-document url("youtube.com") {
+    .ytp-button {
+        background-color: red !important;
+    }
+}

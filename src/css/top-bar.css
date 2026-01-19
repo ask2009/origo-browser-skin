@@ -1,0 +1,24 @@
+#nav-bar {
+    height: 32px;
+    top: 0;
+
+}
+
+.searchmode-switcher,.identity-box-button {
+    border-radius: var(--theme-raidious) !important;
+}
+.urlbar-background {
+    border-radius: var(--theme-raidious) !important;
+}
+.urlbar-input {
+    width: 80%;
+}
+#forward-button,#back-button,#reload-button {
+    width: 40px !important;
+    height: 30px !important;
+    border-radius: var(--theme-raidious);
+    margin-left: 8px !important;
+    background-color: var(--toolbar-field-background-color);
+    
+
+}
