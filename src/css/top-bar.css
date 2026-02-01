@@ -22,3 +22,6 @@
     
 
 }
+#urlbar-container {
+    margin-top: var(--urlbar-container-border-width);
+}
