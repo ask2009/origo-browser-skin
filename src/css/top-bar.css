@@ -25,3 +25,21 @@
 #urlbar-container {
     margin-top: var(--urlbar-container-border-width);
 }
+
+
+
+/* フォーカスされていない状態 */
+.urlbar:not([focused]) {
+    padding: 0 !important;
+    height: 32px !important;
+    transform: translate(0, 0);
+    transition: top 0.4s ease, left 0.4s ease, transform 0.4s ease, padding 0.4s ease;
+}
+
+/* フォーカスされている状態 */
+.urlbar[focused] {
+    top: 30% !important;
+    transform: translate(0, 0);
+    padding: 8px !important;
+}
+

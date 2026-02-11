@@ -31,17 +31,7 @@
         color: var(--color) !important;
     }
     .search-inner-wrapper {
-        background-color: var(--glass-color) !important;
-        border-radius: var(--theme-raidious) !important;
-        backdrop-filter: var(--drop);
-        box-shadow: none;
-    }
-    .search-inner-wrapper::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255,255,255,0.05) 60%);
-        mix-blend-mode: screen;
+        display: none !important;
     }
     
     @keyframes floatUp {
@@ -49,6 +39,4 @@
             transform: scale(1.1) translateY(-4px);
         }
     }
-
-  
 }
