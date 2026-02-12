@@ -7,6 +7,11 @@
 .searchmode-switcher,.identity-box-button {
     border-radius: var(--theme-raidious) !important;
 }
+.searchmode-switcher-chicklet {
+    border-radius: var(--theme-raidious);
+    margin-left: var(--theme-raidious);
+    padding-left: var(--theme-raidious);
+}
 .urlbar-background {
     border-radius: var(--theme-raidious) !important;
 }
@@ -25,7 +30,9 @@
 #urlbar-container {
     margin-top: var(--urlbar-container-border-width);
 }
-
+.urlbar-input-container {
+    min-height: calc(16px + var(--theme-raidious)*2 + 2px ) !important;
+}
 
 
 /* フォーカスされていない状態 */
@@ -34,12 +41,27 @@
     height: 32px !important;
     transform: translate(0, 0);
     transition: top 0.4s ease, left 0.4s ease, transform 0.4s ease, padding 0.4s ease;
+    
 }
 
 /* フォーカスされている状態 */
 .urlbar[focused] {
     top: 30% !important;
+    max-height: 60vh;
     transform: translate(0, 0);
     padding: 8px !important;
+    border-radius: 16px;
+    .urlbar-background {
+        border-radius: 16px;
+    }
+    .urlbarView {
+        max-height: calc(60vh - 48px);
+        overflow: auto;
+        .urlbarView-body-outer {
+            max-height: calc(60vh - 48px);
+            overflow-x: auto;
+        }
+    }
+    
 }
 
